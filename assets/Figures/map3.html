@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3e6133cb1ff5dedc96d89e9f4af8efc9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3e6133cb1ff5dedc96d89e9f4af8efc9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3e6133cb1ff5dedc96d89e9f4af8efc9 = L.map(
+                "map_3e6133cb1ff5dedc96d89e9f4af8efc9",
+                {
+                    center: [34.0549, -118.2426],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_80c8aa6797dbc8f8abc7ddba446a4ac6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_80c8aa6797dbc8f8abc7ddba446a4ac6.addTo(map_3e6133cb1ff5dedc96d89e9f4af8efc9);
+        
+    
+            var marker_644702806f8d64ab9a3d0b694d4ca5d3 = L.marker(
+                [34.0549, -118.2426],
+                {
+}
+            ).addTo(map_3e6133cb1ff5dedc96d89e9f4af8efc9);
+        
+    
+            var icon_76a242d7e208be3df463b6e3ad06794c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_644702806f8d64ab9a3d0b694d4ca5d3.setIcon(icon_76a242d7e208be3df463b6e3ad06794c);
+        
+    
+        var popup_5f7b67eea79c620bea01a649f0c6e778 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8356583139d0bef851e18f2a0c2d30c6 = $(`<div id="html_8356583139d0bef851e18f2a0c2d30c6" style="width: 100.0%; height: 100.0%;">Location: Los Angeles<br>Latitude: 34.0549<br>Longitude: -118.2426</div>`)[0];
+                popup_5f7b67eea79c620bea01a649f0c6e778.setContent(html_8356583139d0bef851e18f2a0c2d30c6);
+            
+        
+
+        marker_644702806f8d64ab9a3d0b694d4ca5d3.bindPopup(popup_5f7b67eea79c620bea01a649f0c6e778)
+        ;
+
+        
+    
+    
+            var marker_82af90ffa5039249f47aa1e1dacd713a = L.marker(
+                [37.7749, -122.4194],
+                {
+}
+            ).addTo(map_3e6133cb1ff5dedc96d89e9f4af8efc9);
+        
+    
+            var icon_2fba32d55a3a41aa09b758008ee0cac5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_82af90ffa5039249f47aa1e1dacd713a.setIcon(icon_2fba32d55a3a41aa09b758008ee0cac5);
+        
+    
+        var popup_784b7c57532cb03ad9a3cc95590ca77b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53da6541ab154fea9cbc351a0fe05d0d = $(`<div id="html_53da6541ab154fea9cbc351a0fe05d0d" style="width: 100.0%; height: 100.0%;">Location: San Francisco<br>Latitude: 37.7749<br>Longitude: -122.4194</div>`)[0];
+                popup_784b7c57532cb03ad9a3cc95590ca77b.setContent(html_53da6541ab154fea9cbc351a0fe05d0d);
+            
+        
+
+        marker_82af90ffa5039249f47aa1e1dacd713a.bindPopup(popup_784b7c57532cb03ad9a3cc95590ca77b)
+        ;
+
+        
+    
+    
+            var marker_5a828f9170148cf7f09f270b3b768aaf = L.marker(
+                [32.7157, -117.1611],
+                {
+}
+            ).addTo(map_3e6133cb1ff5dedc96d89e9f4af8efc9);
+        
+    
+            var icon_c7533becb0a3b6ebf9e4877efcca73f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5a828f9170148cf7f09f270b3b768aaf.setIcon(icon_c7533becb0a3b6ebf9e4877efcca73f8);
+        
+    
+        var popup_2582c370746953573da1c04c2ac4c6c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cad2d94a9c87061fa380bce0c9ba758 = $(`<div id="html_4cad2d94a9c87061fa380bce0c9ba758" style="width: 100.0%; height: 100.0%;">Location: San Diego<br>Latitude: 32.7157<br>Longitude: -117.1611</div>`)[0];
+                popup_2582c370746953573da1c04c2ac4c6c9.setContent(html_4cad2d94a9c87061fa380bce0c9ba758);
+            
+        
+
+        marker_5a828f9170148cf7f09f270b3b768aaf.bindPopup(popup_2582c370746953573da1c04c2ac4c6c9)
+        ;
+
+        
+    
+</script>
+</html>
